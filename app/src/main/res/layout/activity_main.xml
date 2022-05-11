@@ -10,7 +10,7 @@
         android:id="@+id/mensagemTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Clique no botão abaixo para jogar o dado"
+        android:text="@string/textview_orientacao_jogo"
         android:gravity="center_horizontal"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -21,7 +21,7 @@
         android:id="@+id/jogarDadoBt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Jogar"
+        android:text="@string/botao_jogar_texto"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mensagemTv"/>
@@ -37,12 +37,25 @@
         app:layout_constraintTop_toBottomOf="@+id/jogarDadoBt"/>
 
     <ImageView
-        android:id="@+id/resultadoIv"
+        android:id="@+id/primeiroResultadoIv"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="86dp"
+        android:contentDescription="@string/descricao_primeiro_dado"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/resultadoTv"/>
+        app:layout_constraintTop_toBottomOf="@id/resultadoTv"
+        />
+
+    <ImageView
+        android:id="@+id/segundoResultadoIv"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:contentDescription="@string/descricao_segundo_dado"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/primeiroResultadoIv"
+         />
 
 
 
