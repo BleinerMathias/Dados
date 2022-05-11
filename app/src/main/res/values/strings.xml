@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Dados</string>
+    <string name="textview_orientacao_jogo">Clique no botão abaixo para jogar o dado</string>
+    <string name="botao_jogar_texto">Jogar</string>
+    <string name="descricao_primeiro_dado">Resultado do primeiro dado</string>
+    <string name="descricao_segundo_dado">Resultado do segundo dado</string>
     <string-array name="num_dices">
         <item>1</item>
         <item>2</item>
